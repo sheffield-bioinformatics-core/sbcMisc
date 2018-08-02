@@ -6,20 +6,38 @@ date: '`r format(Sys.time(), "Last modified: %d %b %Y")`'
 ---
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE,message=FALSE,warning=FALSE}
 htmltools::img(src = knitr::image_uri(system.file('extdata/logo-sm.png',package='sbcMisc')), 
                alt = 'logo', 
                style = 'position:absolute; top:0; right:0; padding:10px;')
 library(sbcMisc)
+if(!require(ggthemr)) devtools::install_github('cttobin/ggthemr')
+
+uos_colours <- as.character(uos_pal())
+# you have to add a colour at the start of your palette for outlining boxes, we'll use a grey:
+uos_colours <- c("#555555", uos_colours)
+# remove previous effects:
+
+ggthemr_reset()
+# Define colours for your figures with define_palette
+uos <- define_palette(
+ swatch = uos_colours, # colours for plotting points and bars
+ gradient = c(lower = uos_colours[1L], upper = uos_colours[2L]), #upper and lower colours for continuous colours
+ background = "white" #defining a grey-ish background 
+)
+# set the theme for your figures:
+ggthemr(uos)
 ```
+
 
 ---
 
 # 1. Header
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+Example plot showing UOS colours
 
 ```{r}
-sbcMisc::display.uos.pal()
+ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) + geom_point(aes(color=Species, shape=Species))
 ```
+
 
