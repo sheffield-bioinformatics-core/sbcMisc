@@ -1,0 +1,25 @@
+---
+title: "The Title"
+author: "The Analyst"
+output: html_document
+date: '`r format(Sys.time(), "Last modified: %d %b %Y")`'
+---
+
+
+```{r, echo=FALSE}
+htmltools::img(src = knitr::image_uri(system.file('extdata/logo-sm.png',package='sbcMisc')), 
+               alt = 'logo', 
+               style = 'position:absolute; top:0; right:0; padding:10px;')
+library(sbcMisc)
+```
+
+---
+
+# 1. Header
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+
+```{r}
+sbcMisc::display.uos.pal()
+```
+

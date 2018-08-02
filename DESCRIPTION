@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Mark Dunning
 Maintainer: <m.j.dunning@sheffield.ac.uk>
 Description: Miscelleanous code, templates etc for Sheffield Bioinformatics Core
-Imports: ggplot2
+Imports: ggplot2, magick
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
