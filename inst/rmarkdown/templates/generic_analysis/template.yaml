@@ -1,0 +1,4 @@
+name: Generic Analysis
+description: >
+  Template for a generic analysis.
+create_dir: false
