@@ -1,0 +1,11 @@
+Package: sbcMisc
+Type: Package
+Title: Sheffield Bioinformatics Core R package
+Version: 0.1.0
+Author: Mark Dunning
+Maintainer: <m.j.dunning@sheffield.ac.uk>
+Description: Miscelleanous code, templates etc for Sheffield Bioinformatics Core
+Imports: ggplot2
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
