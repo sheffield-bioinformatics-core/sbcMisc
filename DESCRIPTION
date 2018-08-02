@@ -6,7 +6,7 @@ Author: Mark Dunning
 Maintainer: <m.j.dunning@sheffield.ac.uk>
 Description: Miscelleanous code, templates etc for Sheffield Bioinformatics Core
 Imports: ggplot2
-Remotes: cttobin/ggthemr
+Remotes: github:cttobin/ggthemr
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
