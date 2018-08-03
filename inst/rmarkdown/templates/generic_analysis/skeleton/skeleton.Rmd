@@ -11,7 +11,7 @@ htmltools::img(src = knitr::image_uri(system.file('extdata/logo-sm.png',package=
                alt = 'logo', 
                style = 'position:absolute; top:0; right:0; padding:10px;')
 library(sbcMisc)
-if(!require(ggthemr)) devtools::install_github('cttobin/ggthemr')
+if(!require(ggthemr)) devtools::install_github('cttobin/ggthemr');library(ggthemr)
 
 uos_colours <- as.character(uos_pal())
 # you have to add a colour at the start of your palette for outlining boxes, we'll use a grey:
