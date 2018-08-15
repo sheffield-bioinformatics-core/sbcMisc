@@ -7,9 +7,13 @@ date: '`r format(Sys.time(), "Last modified: %d %b %Y")`'
 
 
 ```{r, echo=FALSE,message=FALSE,warning=FALSE}
-htmltools::img(src = knitr::image_uri(system.file('extdata/logo-sm.png',package='sbcMisc')), 
-               alt = 'logo', 
-               style = 'position:absolute; top:0; right:0; padding:10px;')
+ htmltools::img(src = knitr::image_uri(system.file('extdata/logo-sm.png',package='sbcMisc')), 
+                alt = 'logo', 
+                style = 'position:absolute; 
+                top:0; 
+                right:0; 
+                margin-right:40px; 
+                margin-top:50px;')
 library(sbcMisc)
 if(!require(ggthemr)) devtools::install_github('cttobin/ggthemr');library(ggthemr)
 
